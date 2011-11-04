@@ -1,3 +1,9 @@
+# revision 23241
+# category Package
+# catalog-ctan /graphics/pstricks/contrib/numericplots
+# catalog-date 2011-07-14 20:05:24 +0200
+# catalog-license gpl3
+# catalog-version 1.0
 Name:		texlive-numericplots
 Version:	1.0
 Release:	1
@@ -56,6 +62,7 @@ Matlab results to plottable data.
 %doc %{_texmfdistdir}/doc/latex/numericplots/history.tex
 %doc %{_texmfdistdir}/doc/latex/numericplots/keys_NumericDataPlot.tex
 %doc %{_texmfdistdir}/doc/latex/numericplots/options.tex
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -66,3 +73,5 @@ Matlab results to plottable data.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
