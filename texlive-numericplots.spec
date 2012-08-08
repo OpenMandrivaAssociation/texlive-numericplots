@@ -1,12 +1,12 @@
-# revision 23241
+# revision 26791
 # category Package
 # catalog-ctan /graphics/pstricks/contrib/numericplots
-# catalog-date 2011-07-14 20:05:24 +0200
+# catalog-date 2012-06-01 10:55:54 +0200
 # catalog-license gpl3
-# catalog-version 1.0
+# catalog-version 1.1
 Name:		texlive-numericplots
-Version:	1.0
-Release:	2
+Version:	1.1
+Release:	1
 Summary:	Plot numeric data (including Matlab export) using PSTricks
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/graphics/pstricks/contrib/numericplots
