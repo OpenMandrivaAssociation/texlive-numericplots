@@ -1,12 +1,12 @@
-# revision 26791
+# revision 23241
 # category Package
 # catalog-ctan /graphics/pstricks/contrib/numericplots
-# catalog-date 2012-06-01 10:55:54 +0200
+# catalog-date 2011-07-14 20:05:24 +0200
 # catalog-license gpl3
-# catalog-version 1.1
+# catalog-version 1.0
 Name:		texlive-numericplots
-Version:	1.1
-Release:	1
+Version:	1.0
+Release:	2
 Summary:	Plot numeric data (including Matlab export) using PSTricks
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/graphics/pstricks/contrib/numericplots
@@ -63,3 +63,17 @@ Matlab results to plottable data.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc %{buildroot}%{_texmfdistdir}
+
+
+%changelog
+* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 1.0-2
++ Revision: 754448
+- Rebuild to reduce used resources
+
+* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 1.0-1
++ Revision: 719142
+- texlive-numericplots
+- texlive-numericplots
+- texlive-numericplots
+- texlive-numericplots
+
