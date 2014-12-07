@@ -6,7 +6,7 @@
 # catalog-version 2.0.2
 Name:		texlive-numericplots
 Version:	2.0.2
-Release:	7
+Release:	8
 Summary:	Plot numeric data (including Matlab export) using PSTricks
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/graphics/pstricks/contrib/numericplots
