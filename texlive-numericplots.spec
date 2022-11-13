@@ -1,18 +1,12 @@
-# revision 31729
-# category Package
-# catalog-ctan /graphics/pstricks/contrib/numericplots
-# catalog-date 2013-09-20 08:02:58 +0200
-# catalog-license gpl3
-# catalog-version 2.0.2
 Name:		texlive-numericplots
-Version:	2.0.2
-Release:	10
+Version:	31729
+Release:	1
 Summary:	Plot numeric data (including Matlab export) using PSTricks
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/graphics/pstricks/contrib/numericplots
 License:	GPL3
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/numericplots.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/numericplots.doc.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/numericplots.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/numericplots.doc.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -27,12 +21,12 @@ results. The package provides Matlab functions to transform
 Matlab results to plottable data.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -95,7 +89,7 @@ Matlab results to plottable data.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1
+%autosetup -p1 -c -a1
 
 %build
 
