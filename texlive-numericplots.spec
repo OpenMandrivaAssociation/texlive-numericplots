@@ -3,7 +3,7 @@ Version:	31729
 Release:	2
 Summary:	Plot numeric data (including Matlab export) using PSTricks
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/graphics/pstricks/contrib/numericplots
+URL:		https://www.ctan.org/tex-archive/graphics/pstricks/contrib/numericplots
 License:	GPL3
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/numericplots.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/numericplots.doc.r%{version}.tar.xz
